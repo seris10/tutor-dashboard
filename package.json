@@ -8,7 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "smoke": "node tests/smoke/repo-smoke.mjs",
+    "ci:check": "npm run test && npm run build && npm run smoke"
   },
   "dependencies": {
     "chart.js": "^4.4.0",
