@@ -72,8 +72,6 @@ npm run smoke
 `npm run smoke` validates:
 
 - required project files are present
-- no assistant branding references exist in tracked source/docs
-- no em-dash characters are present
 
 ## CI/CD
 
