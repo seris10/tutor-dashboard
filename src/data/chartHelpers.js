@@ -55,7 +55,7 @@ export function createSkillTooltipConfig(skillExamples) {
     boxPadding: 8,
     callbacks: {
       title(items) {
-        return items[0].label + '  —  ' + items[0].raw + '%';
+        return items[0].label + '  -  ' + items[0].raw + '%';
       },
       afterTitle() {
         return '━━━━━━━━━━━━━━━━━━━━━━━━━━━';

@@ -24,11 +24,11 @@ export default function InsightsTab({ student }) {
       <ChartCard icon="✍️" title="Sample Student Work" fullWidth style={{ marginTop: '1.5rem' }}>
         <h4 style={{ color: 'var(--chart-success)', marginBottom: '0.5rem' }}>Strengths</h4>
         {ins.sampleWork.strengths.map((q, i) => (
-          <QuoteBox key={i} text={`"${q.text}"`} attribution={`— ${q.attribution}`} />
+          <QuoteBox key={i} text={`"${q.text}"`} attribution={`- ${q.attribution}`} />
         ))}
         <h4 style={{ color: 'var(--chart-danger)', margin: '1.5rem 0 0.5rem' }}>Error Patterns</h4>
         {ins.sampleWork.errors.map((e, i) => (
-          <QuoteBox key={i} attribution={`— ${e.source}`}>
+          <QuoteBox key={i} attribution={`- ${e.source}`}>
             Problem: &ldquo;{e.problem}&rdquo;<br />
             <strong>Student Answer:</strong> {e.studentAnswer} <span style={{ color: 'var(--chart-danger)' }}>✗</span><br />
             <strong>Correct:</strong> {e.correct}

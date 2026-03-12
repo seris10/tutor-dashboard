@@ -22,7 +22,7 @@ export default function AcademicTab({ student }) {
 
       {student.criticalFinding && (
         <ChartCard icon="🔍" title="Critical Finding: Assessment-Context Gap" fullWidth>
-          <QuoteBox attribution={`— ${student.criticalFinding.attribution}`}>
+          <QuoteBox attribution={`- ${student.criticalFinding.attribution}`}>
             <strong>S6 Observation:</strong> {student.criticalFinding.observation}
           </QuoteBox>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginTop: '1rem' }}>
